@@ -1,7 +1,7 @@
 # pdpythonRunAtHome
 The quick, run-at-home version of the pdpython repo, generated Jan 2023. This is separate from the development repo, and has been tested on Python 3.10.4 with the library packages listed in requirements.txt.
 
-To run using a Windows terminal virtual environment (macOS works differently, please see [the documentation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/):
+To run using a Windows terminal virtual environment (macOS works differently, please see [the documentation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)):
 
 - Download the whole code folder
 - cd into the pdpython_model folder
