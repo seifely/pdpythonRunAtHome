@@ -8,10 +8,13 @@ To run using a Windows terminal virtual environment (macOS works differently, pl
 - Create a virtual python environment using each of these commands in turn:
 
 py -m venv env
+
 .\env\Scripts\activate
+
 py -m pip install -r requirements.txt
 
 - Then run any script you require using:
+
 python filename.py
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
