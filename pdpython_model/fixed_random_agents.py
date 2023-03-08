@@ -623,7 +623,7 @@ class PDAgent(Agent):
     #                                                                                                    self.statemode)
     #
     #                 # pick a move
-    #                 if strategy is not "MOODYLEARN":
+    #                 if strategy != "MOODYLEARN":
     #                     move = self.pick_move(strategy, payoffs, partner_ID, self.working_memory)
     #                 else:
     #                     move = self.pick_move(strategy, payoffs, partner_ID, self.partner_states)
@@ -955,7 +955,7 @@ class PDAgent(Agent):
             # else:
             #     egreedy = sarsa_moody.egreedy_action(self.moody_epsilon, self.moody_qtable, learning_state[id], self.model.moody_memoryPaired)
 
-            if self.model.moody_MA is not 'v':
+            if self.model.moody_MA != 'v':
                 moodAffectMode = 'Fixed'
             else:
                 moodAffectMode = 'Mood'
@@ -1271,7 +1271,7 @@ class PDAgent(Agent):
 
 
                     if self.strategy == "VPP" or "LEARN":
-                        if self.strategy is not "MOODYLEARN":
+                        if self.strategy != "MOODYLEARN":
                             if self.model.learnFrom != "us":
                                 if self.working_memory.get(partner_ID) is None:
                                     zeroes = []
@@ -2808,7 +2808,7 @@ class PDAgent(Agent):
                 move_counter[move] = 1
         # print("Move counter:", move_counter)
 
-        if move_counter.get('C') and move_counter.get('D') is not None:
+        if move_counter.get('C') and move_counter.get('D') != None:
 
             if move_counter['C'] == move_counter['D']:
                 self.common_move = 'Eq'
@@ -2886,7 +2886,7 @@ class PDAgent(Agent):
 
 
     def set_starting_oldstates(self, strategy, learning_from, size):
-        if strategy is not 'MOODYLEARN':
+        if strategy != 'MOODYLEARN':
             if learning_from == "me":
                 zeroes = []
                 for j in range(size):
@@ -3438,7 +3438,7 @@ class PDAgent(Agent):
 
                     self.stepCount += 1
 
-                    if round_payoffs is not None:
+                    if round_payoffs != None:
                         if self.printing:
                             print("I am agent", self.ID, ", and I have earned", round_payoffs, "this round")
                         self.score += round_payoffs
@@ -3707,7 +3707,7 @@ class PDAgent(Agent):
 
                     self.stepCount += 1
 
-                    if round_payoffs is not None:
+                    if round_payoffs != None:
                         if self.printing:
                             print("I am agent", self.ID, ", and I have earned", round_payoffs, "this round")
                         self.score += round_payoffs
@@ -3850,7 +3850,7 @@ class PDAgent(Agent):
 
                     self.stepCount += 1
 
-                    if round_payoffs is not None:
+                    if round_payoffs != None:
                         if self.printing:
                             print("I am agent", self.ID, ", and I have earned", round_payoffs, "this round")
                         self.score += round_payoffs

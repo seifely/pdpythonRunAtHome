@@ -915,7 +915,7 @@ class PDModel(Model):
 
             for i in agent_training_data:
                 # print("agent has:", i)
-                if len(i) is not 0:
+                if len(i) != 0:
                     for j in range(len(i)):
                         jj = i[j]
                         # print("data to append", jj)
