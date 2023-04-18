@@ -26,4 +26,6 @@ The main four scripts to run include:
 - *fixed_random_run.py*, a script that runs the random graph version of the simulation (with partner swapping), WITH the visual demonstration and easy parameter input
 - *fixed_random_batchrun.py*, a script that runs the random graph version of the simulation (with partner swapping), WITHOUT the visual demo
 
-For more detailed instruction, please consult the *How to Run* .docx/.pdf file contained within.
+For more detailed instruction, please consult the *How to Run* .docx/.pdf file contained within. For a quick demonstration of this repo, please look [here](https://youtu.be/PF0XYi_mFSY).
+
+
